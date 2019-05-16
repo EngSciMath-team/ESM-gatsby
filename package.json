@@ -26,12 +26,12 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-config-react-app": "^4.0.1",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.3.0",
     "prettier": "^1.16.4"
   },
   "keywords": [
@@ -42,6 +42,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "lint:js": "eslint . --fix",
+    "lint:css": "echo 'No CSS linting yet!'",
+    "lint": "npm run lint:js && npm run lint:css",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
@@ -52,5 +54,10 @@
   },
   "bugs": {
     "url": "https://github.com/blakenoll/gatsby-starter-styled-components/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
   }
 }

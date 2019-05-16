@@ -15,6 +15,11 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
   rules: {
     quotes: ["error", "double"]
   }
