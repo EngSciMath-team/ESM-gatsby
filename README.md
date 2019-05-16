@@ -1,3 +1,7 @@
+WordPress design - http://54.145.35.244.xip.io/
+ESM Email - engscimath@protonmail.com
+
+
 # Gatsby starter using styled-components 💅
 
 Gatsby default starter modified to use [styled-components](https://www.styled-components.com/).
