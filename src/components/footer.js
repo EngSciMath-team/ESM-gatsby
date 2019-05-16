@@ -5,8 +5,12 @@ import { Container } from "./layoutComponents";
 const Footer = ({ className }) => (
   <footer className={className}>
     <Container>
-      © {new Date().getFullYear()} EngSciMath.
-      {` `}
+      © 
+      {" "}
+      {new Date().getFullYear()}
+      {" "}
+EngSciMath.
+      {" "}
       <a href="mailto:engscimath@protonmail.com">engscimath@protonmail.com</a>
     </Container>
   </footer>
