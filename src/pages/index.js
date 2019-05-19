@@ -11,9 +11,10 @@ import SEO from "../components/seo";
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />{" "}
+      <SEO title="Home" keywords={["gatsby", "application", "react"]} />
+      {" "}
       <JoinUs />
-      <About /> 
+      <About />
       <Container>
         <Link to="/community-guidelines/">Go to Community Guidelines</Link>
       </Container>

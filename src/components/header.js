@@ -38,7 +38,7 @@ const TextBox = styled.div`
   }
 `;
 
-const Header = ({ siteTitle, className }) => (
+const Header = () => (
   <StyledHeader>
     <Container>
       <TextBox>
@@ -56,11 +56,12 @@ const Header = ({ siteTitle, className }) => (
 );
 
 Header.propTypes = {
+  className: PropTypes.string,
   siteTitle: PropTypes.string
 };
 
 Header.defaultProps = {
-  siteTitle: ``
+  siteTitle: ""
 };
 
 export default Header;

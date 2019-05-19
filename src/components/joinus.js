@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
-// import PropTypes from "prop-types"
 import React from "react";
+import PropTypes from "prop-types";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import styled from "styled-components";
@@ -93,7 +93,6 @@ const JoinUs = () => {
         {props => {
           const {
             values,
-            touched,
             errors,
             isSubmitting,
             handleChange,
@@ -134,4 +133,20 @@ const JoinUs = () => {
     </JoinUsWrapper>
   );
 };
+
+JoinUs.propTypes = {
+  values: PropTypes.shape({
+    email: PropTypes.string,
+    blurb: PropTypes.string
+  }),
+  touched: PropTypes.bool,
+  errors: PropTypes.shape({
+    email: PropTypes.bool
+  }),
+  isSubmitting: PropTypes.bool,
+  handleChange: PropTypes.func,
+  handleBlur: PropTypes.func,
+  handleSubmit: PropTypes.func
+};
+
 export default JoinUs;
